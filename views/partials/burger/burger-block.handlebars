@@ -1,0 +1,12 @@
+<li>
+	{{this.burger_name}}
+
+	<button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}" class="btn waves-effect waves-light" type="submit">
+	
+		{{#if devoured}}<p id="return"><i class="material-icons">reply_all</i>Return</p>
+
+		{{else}}<p id="eat"><img src="https://seeklogo.com/images/B/burger-food-logo-5B8B17C290-seeklogo.com.png" alt="glyphicons envelope icon" height="16" width="24" />Eat this!</p>{{/if}}
+	</button>
+
+	<button class="delete-burger" data-id="{{this.id}}" class="btn waves-effect waves-light" type="submit" id="eat">DELETE!<i class="material-icons">delete</i></button>
+</li>

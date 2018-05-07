@@ -11,13 +11,22 @@ router.get("/", function(req, res) {
     var hbsObject = {
       burgers: data
     };
+     console.log("this is hbsObject +++====>>>>>", hbsObject);
+    var eaten = [];
+    for (var i = 0; i < data.length; i++) {
+      console.log("this is DEVOURED ", data[i].devoured);
+      var dev = data[i].devoured;
+      if(dev === 0){
+        eaten.push(data[i]);
+      }
+    }
     console.log(hbsObject);
     res.render("index", hbsObject);
   });
 });
 
-router.post("/burgers/create", function(req, res) {
-  console.log("crea")
+router.post("/api/burgers", function(req, res) {
+  
   burger.create([
     "burger_name", "devoured"
   ], [
@@ -28,7 +37,7 @@ router.post("/burgers/create", function(req, res) {
   });
 });
 
-router.put("/burgers/:id", function(req, res) {
+router.put("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
   console.log("condition", condition);
@@ -45,7 +54,7 @@ router.put("/burgers/:id", function(req, res) {
   });
 });
 
-router.delete("/burgers/:id", function(req, res) {
+router.delete("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
   burger.delete(condition, function(result) {
