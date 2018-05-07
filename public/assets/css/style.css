@@ -8,7 +8,7 @@ img {
     top: 10px;
 }
 nav  {
-  background-color: #404040;
+  background-color: black;
 }
 
 #github  {
@@ -34,7 +34,7 @@ li {
     font-size: 18px;
     padding: 22px;
     margin: 5px;
-    background: lightblue;
+    background: yellow;
     height: 68%;
 }
 
@@ -42,7 +42,7 @@ li {
   font-size: 18px;
   padding: 0;
   margin: 5px;
-  background: lightblue;
+  background: white;
   height: 54px;
 }
 
@@ -83,7 +83,7 @@ li {
 .card {
     position: relative;
     margin: .5rem 0 1rem 0;
-    background-color: #fff;
+    background-color: black;
     transition: box-shadow .25s;
     border-radius: 2px;
     width: 33.33%;
@@ -219,7 +219,7 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
        padding-top: 20px;
        /*background-color: black;*/
        background-size: cover;
-       background-image: url("https://png.pngtree.com/thumb_back/fh260/back_pic/03/62/58/9757aaf3c35b691.jpg");
+       background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXA7fFshtBfgpbzFZf-AbV_aTmIW1ymcju3M3zTXD9zGo5EQx4");
        position: relative;
        display: block;
        float: left;
